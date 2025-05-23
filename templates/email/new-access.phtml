@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to {your website name}</title>
+</head>
+<body>
+    <p>
+        Your account(<?= $user_account; ?>) has<?= ($status !== false ? '' : ' <b>not</b>'); ?> got access permission. 
+        <br/><?=($status !== false ? 'Welcome to { your website name }!' : 'Any problem? Please contact to your administrator ASAP. Thanks!' ); ?>
+        <br/>
+        <br/>
+        <small>- This is a system email, please do not reply.</small>
+    </p>
+</body>
+</html>

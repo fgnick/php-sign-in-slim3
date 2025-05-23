@@ -1,0 +1,54 @@
+/*
+Style
+*/
+.bg-login-image {
+    background: #080a28;
+    background: -webkit-linear-gradient(to left, #080a28, #033755);
+    background: linear-gradient(to left, #080a28, #033755);
+    color: white;
+}
+
+.bg-password-image {
+    background-position: center;
+    background-size: cover;
+}
+
+.font-size-xs {
+    font-size: 0.75rem;
+}
+
+.font-size-sm {
+    font-size: 0.875rem;
+}
+
+.font-size-md {
+    font-size: 1rem;
+}
+
+.font-size-lg {
+    font-size: 1.25rem;
+}
+
+.font-size-xl {
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    color: #ACACAC;
+}
+
+input::-webkit-input-placeholder {
+    color: #ACACAC;
+}
+
+input::-moz-placeholder {
+    color: #ACACAC;
+}
+
+input:-ms-input-placeholder {
+    color: #ACACAC;
+}
+
+input::-ms-input-placeholder {
+    color: #ACACAC;
+}
