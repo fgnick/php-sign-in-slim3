@@ -55,6 +55,6 @@ For example:
     Require all granted
   </Directory>
 
-  ErrorLog "<span class="math-inline">\{INSTALL_DIR\}/logs/php-sign-in-slim3\-error\.log"
+  ErrorLog "<span class="math-inline">{INSTALL_DIR}/logs/php-sign-in-slim3-error.log"
   CustomLog "</span>{INSTALL_DIR}/logs/php-sign-in-slim3-access.log" combined
 </VirtualHost>
