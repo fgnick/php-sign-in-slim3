@@ -18,9 +18,42 @@ To run this project properly, make sure your environment meets the following ver
 
 ### 🚀 Getting Started
 
-To run locally:
+### Prerequisites
 
-```bash
-git clone https://github.com/Nick-FGN/php-slim3-sign-in.git
-cd php-slim3-sign-in
-composer install
+To understand this project, it's highly recommended to first familiarize yourself with the **Slim 3 framework**. You can find all the necessary documentation and information at: [https://www.slimframework.com/docs/v3/](https://www.slimframework.com/docs/v3/)
+
+---
+
+### Vendor Directory Notes
+
+The `/vendor` directory contains dependencies managed by Composer. While there might be minor personal modifications to some of these files, they should not affect your ability to directly download and use the original, open-source code from their respective authors.
+
+---
+
+### Frontend Integration
+
+This project primarily features a dedicated space for **Vue.js** integration. The PHP counterpart that interacts with the Vue.js frontend is located at `/src/AppVue.php`.
+
+Please place all frontend code (written by your frontend engineers) into the `/public` directory.
+
+---
+
+### Web Server Configuration
+
+To ensure the project runs correctly, your web server's document root or corresponding project path should be set to the `/public` directory.
+
+For example:
+
+<VirtualHost _default_:80>
+  ServerName localhost
+  ServerAlias localhost
+  DocumentRoot "${INSTALL_DIR}/www/php-sign-in-slim3/public"
+  <Directory "${INSTALL_DIR}/www/php-sign-in-slim3/public/">
+    Options -Indexes -Includes +FollowSymLinks
+    AllowOverride All
+    Require all granted
+  </Directory>
+  
+  ErrorLog "${INSTALL_DIR}/logs/php-sign-in-slim3-error.log"
+  CustomLog "${INSTALL_DIR}/logs/php-sign-in-slim3-access.log" combined
+</VirtualHost>
