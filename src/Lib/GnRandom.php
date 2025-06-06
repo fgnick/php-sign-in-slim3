@@ -21,7 +21,7 @@ class GnRandom
      */
     private static function randomSeed ( int $length = Globals::RAND_SEED_LEN ): string
     {
-        if(!isset($length) || $length <= 8 ) {
+        if( $length <= 8 ) {
             $length = Globals::RAND_SEED_LEN;
         }
         if (function_exists('random_bytes')) {

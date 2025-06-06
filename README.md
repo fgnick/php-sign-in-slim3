@@ -48,13 +48,13 @@ For example:
 <VirtualHost _default_:80>
   ServerName localhost
   ServerAlias localhost
-  DocumentRoot "<span class="math-inline">\{INSTALL\_DIR\}/www/php\-sign\-in\-slim3/public"
+  DocumentRoot "<span class="math-inline">{INSTALL_DIR}/www/php-sign-in-slim3/public"
   <Directory "</span>{INSTALL_DIR}/www/php-sign-in-slim3/public/">
     Options -Indexes -Includes +FollowSymLinks
     AllowOverride All
     Require all granted
   </Directory>
 
-  ErrorLog "<span class="math-inline">\{INSTALL\_DIR\}/logs/php\-sign\-in\-slim3\-error\.log"
+  ErrorLog "<span class="math-inline">{INSTALL_DIR}/logs/php-sign-in-slim3-error.log"
   CustomLog "</span>{INSTALL_DIR}/logs/php-sign-in-slim3-access.log" combined
 </VirtualHost>
