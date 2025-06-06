@@ -241,7 +241,7 @@ class ValueValidate extends StrProc
     public static function isNumberArray( array &$arr, bool $toInt = false ): bool
     {
         foreach ( $arr as &$v ) {
-            if ( !is_numeric( $v ) && !is_int( $v ) ) {
+            if ( !is_numeric( $v ) ) {
                 return false;
             }
             if ( $toInt ) {
